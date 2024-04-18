@@ -1,9 +1,9 @@
-import { Tinyweb }  from '../src/index'
+import { Tinyserve }  from '../src/index'
 
-const app = new Tinyweb()
+const app = new Tinyserve()
 
 app.get('/', async (c) => {
-  return c.text('Hello, TinyWeb!')
+  return c.text('Hello, Tinyserve!')
 })
 
 app.get('/test', async (c) => {

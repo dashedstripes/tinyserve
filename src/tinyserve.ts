@@ -26,7 +26,7 @@ export class Context {
     }
 }
 
-export class Tinyweb {
+export class Tinyserve {
 
     routes: { path: string, handler: (c: Context) => Promise<Response> }[]
 

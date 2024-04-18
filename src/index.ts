@@ -1,2 +1,2 @@
-import { Tinyweb } from './tinyweb'
-export { Tinyweb }
+import { Tinyserve } from './tinyserve'
+export { Tinyserve }

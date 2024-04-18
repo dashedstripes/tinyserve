@@ -1,8 +1,8 @@
 import http, { IncomingMessage, ServerResponse } from "http";
 import { Readable } from "stream";
-import { Tinyweb } from "src/tinyweb";
+import { Tinyserve } from "src/tinyserve";
 
-export const handler = (app: Tinyweb) => {
+export const handler = (app: Tinyserve) => {
   const host = 'localhost';
   const port = 8000;
   
