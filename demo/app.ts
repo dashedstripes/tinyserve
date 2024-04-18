@@ -20,7 +20,7 @@ app.get('/test', async (c) => {
   `)
 })
 
-app.get('/api', async (c) => {
+app.post('/api', async (c) => {
   return c.json({
     message: "Hello, World!"
   })
