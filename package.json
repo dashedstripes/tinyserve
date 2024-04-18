@@ -5,7 +5,8 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "demo": "npx ts-node demo/index.ts",
+    "demo:node": "npx ts-node demo/node.ts",
+    "demo:netlify": "netlify dev demo/netlify.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,5 +16,8 @@
   "devDependencies": {
     "@types/node": "^20.12.7",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@netlify/functions": "^2.6.0"
   }
 }
