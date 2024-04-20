@@ -5,8 +5,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "demo:node": "nodemon --exec \"npx ts-node demo/node.ts\"",
-    "demo:netlify": "netlify dev demo/netlify.ts",
+    "demo:node": "nodemon --exec \"npx ts-node demo/backend/node-js/index.ts\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
