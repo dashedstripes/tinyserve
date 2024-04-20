@@ -6,6 +6,10 @@ app.get('/', async (c) => {
   return c.text('Hello, Tinyserve!')
 })
 
+app.get('/posts/:id', async (c) => {
+  return c.text(`Post ID: ${c.params.id}`)
+});
+
 app.get('/test', async (c) => {
   return c.html(`
     <html>
@@ -18,6 +22,10 @@ app.get('/test', async (c) => {
       </body>
     </html>
   `)
+})
+
+app.get('/test/*', async (c) => {
+  return c.text('Wildcard route for test')
 })
 
 app.post('/api', async (c) => {

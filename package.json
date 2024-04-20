@@ -5,7 +5,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "demo:node": "npx ts-node demo/node.ts",
+    "demo:node": "nodemon --exec \"npx ts-node demo/node.ts\"",
     "demo:netlify": "netlify dev demo/netlify.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
